@@ -1,4 +1,4 @@
-THELOUNGE_VERSION?=3.0.1
+THELOUNGE_VERSION?=master
 ORGANISATION?=thelounge
 
 all: main alpine
