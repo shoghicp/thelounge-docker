@@ -16,5 +16,5 @@ COPY docker-entrypoint.sh /usr/local/bin/docker-entrypoint.sh
 
 # Install thelounge.
 ARG THELOUNGE_BRANCH=master
-RUN yarn --non-interactive global add https://github.com/shoghicp/thelounge.git#${THELOUNGE_BRANCH} && \
+RUN yarn --non-interactive global add "https://github.com/shoghicp/thelounge.git#${THELOUNGE_BRANCH}" && \
     yarn --non-interactive cache clean
