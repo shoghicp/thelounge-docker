@@ -10,7 +10,7 @@ ENV PORT 9000
 EXPOSE ${PORT}
 
 ENTRYPOINT ["docker-entrypoint.sh"]
-CMD ["thelounge", "start"]
+CMD ["node", "/opt/thelounge/index", "start"]
 
 COPY docker-entrypoint.sh /usr/local/bin/docker-entrypoint.sh
 
